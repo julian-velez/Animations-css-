@@ -1,0 +1,36 @@
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 300px;
+}
+
+.line {
+    width: 450px;
+    height: 30px;
+    background-color:orange;
+    transform: rotate(-70deg)translatey(-50%);
+    border-radius: 111px;
+    animation: julian alternate 5s infinite;
+   
+}
+
+.line-2{
+    width: 450px;
+    height: 30px;
+    background-color:cyan;
+    transform: rotate(80deg)translate(50%);
+    border-radius: 111px;
+    animation: julian alternate 5s infinite;   
+}
+    
+
+@keyframes julian {
+    0% {
+        transform: rotate(-70deg)translatey(50%);
+    }
+    100% {
+        transform: rotatey(80deg)translatey(50%);
+    }
+}
